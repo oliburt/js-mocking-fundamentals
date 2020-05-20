@@ -1,4 +1,4 @@
-const utils = require('./utils')
+const utils = require("./utils")
 
 function thumbWar(player1, player2) {
   const numberToWin = 2

@@ -9,11 +9,11 @@ const utils = require("../utils")
 // so we replace this function with something 
 // predictable
 const originalGetWinner = utils.getWinner
-utils.getWinner = (a, b) => b
+utils.getWinner = (a, b) => a
 
 const winner = thumbWar("Olib", "Olia")
 
-assert.strictEqual(winner, "Olia")
+assert.strictEqual(winner, "Olib")
 
 // restore/cleanup the module to original state
 utils.getWinner = originalGetWinner
