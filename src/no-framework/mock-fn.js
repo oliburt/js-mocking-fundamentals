@@ -12,7 +12,7 @@ function fn(implementation) {
 }
 
 const originalGetWinner = utils.getWinner
-utils.getWinner = fn((a, b) => a)
+utils.getWinner = fn((p1, p2) => p1)
 
 const winner = thumbWar("Olib", "Olia")
 
